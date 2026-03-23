@@ -474,16 +474,7 @@ for c in filtered:
         icon=make_icon(TYPE_COLORS[c["type"]]),
     ).add_to(m)
 
-# Burnaby centre star
-folium.Marker(
-    location=[49.2488, -122.9805],
-    tooltip="<b>📍 Burnaby (your area)</b>",
-    icon=folium.DivIcon(html="""
-        <div style="font-size:22px;line-height:1;filter:drop-shadow(0 1px 3px rgba(0,0,0,0.5));">⭐</div>
-    """, icon_size=(22, 22), icon_anchor=(11, 11)),
-).add_to(m)
 
-st_folium(m, use_container_width=True, height=560)
 
 # ── Data table ────────────────────────────────────────────────────────────────
 with st.expander("📋 View all clinics as a table"):
