@@ -476,6 +476,9 @@ for c in filtered:
 
 
 
+
+st_folium(m, use_container_width=True, height=560)
+
 # ── Data table ────────────────────────────────────────────────────────────────
 with st.expander("📋 View all clinics as a table"):
     import pandas as pd
